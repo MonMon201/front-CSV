@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { GlobalStyle } from './GlobalStyle';
+import { Header } from './components/header/Header';
+import { Recruits } from './components/table/Table';
+import { StyledBody } from './components/body/Body';
+import { constants } from './constants';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => {
+    return (
+        <>
+            <GlobalStyle />
+            <Header />
+            <StyledBody>
+                <Recruits />
+            </StyledBody>
+        </>
+    );
+};
