@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { colors } from '../../colors';
 
 export const Wrap = styled.div`
     width: 100%;
